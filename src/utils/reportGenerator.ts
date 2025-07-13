@@ -7,7 +7,7 @@ const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 // Created by Atharv Hatwar
 export async function generateReport(topic: string): Promise<string> {
   // Created by Atharv Hatwar
-  const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-1.0-pro' });
 
   // Created by Atharv Hatwar
   const sections = [
