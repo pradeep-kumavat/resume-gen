@@ -49,6 +49,7 @@ export async function generateReport(topic: string): Promise<string> {
         Make it professional and academic. Include relevant technical details and citations.`
       );
       const response = await result.response;
+      console.log(response)
       const text = response.text();
       fullReport += text + '\n\n';
     }
